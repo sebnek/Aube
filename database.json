@@ -1,0 +1,20 @@
+{
+    "dieux": {
+        "Damballah": "fichiers/dieu_damballah.txt",
+        "Derketo": "fichiers/dieu_derketo.txt",
+        "Dagon": "fichiers/dieu_dagon.txt",
+        "Ymir": "fichiers/dieu_ymir.txt"
+    },
+    "lieux": {
+        "Aquilonie": "fichiers/lieu_aquilonie.txt",
+        "Zembabwei": "fichiers/lieu_zembabwei.txt"
+    },
+    "personnages": {
+        "Nom1": "fichiers/personnage_nom1.txt",
+        "Nom2": "fichiers/personnage_nom2.txt"
+    },
+    "compétences": {
+        "Esquive": "fichiers/competence_esquive.txt",
+        "Maitrise des armes": "fichiers/competence_armes.txt"
+    }
+}
