@@ -1,0 +1,33 @@
+L'Héroisme
+
+Le monde de Conan le barbare regorge de hauts faits, de survies improbables, et de personnages plus grands que nature. De véritables héros capables des prouesses martiales dont les paysans parlent au coin du feu. Ces hauts faits
+sont représentés par la mécanique d’Héroïsme. Un personnage dispose d’un nombre de points
+d’héroïsme dépendant directement de ses compétences et d’éventuelles récompenses qu’il aurait pu acquérir pendant le déroulement du jeu.
+Chacun de ces points d’héroïsme peut être dépensé pendant le combat pour pratiquer une attaque hors du commun ou survivre à un coup qui aurait décapité un Vanir. C’est ce que nous appelons attaque héroïque et parade héroïque. Ces points d’héroïsme ne se rechargent qu’au début de chaque nouvelle Période. (une periode c'est du lever au coucher du soleil, ou du coucher ay lever du soleil)
+Annonce : Quand un personnage prononce “Par mon Arme !” sans annonce après et en portant un
+coup au corps à corps, il s’agit d’une attaque héroïque.
+Vous ne pourrez lui en vouloir si votre adversaire ne se rend compte de rien si vous le frappez de
+dos avec une attaque héroïque après une annonce murmurée.
+Restriction : Vous ne pouvez pas utiliser de point d’héroïsme pour contrer un coup que vous auriez reçu par surprise ou une annonce n’étant pas lié à un coup reçu avec une arme (un sort, un piège ou une compétence par exemple).
+De plus, les points d’héroïsme ne peuvent pas être
+utilisés pour faire une attaque héroïque avec des armes de jet.
+Attaques héroïques : Dépensez un point d’héroïsme, annoncez un vibrant “Par mon Arme !” et frappez votre adversaire avec votre arme. Notez que vous devez annoncer “Par mon Arme !” juste avant de frapper et non pendant ou
+ensuite. Vous vous assurerez d’avoir l’attention de votre cible avant de faire cette annonce.
+Parades héroïques : Dépensez un point d’héroïsme pour résister à n’importe qu’elle annonce “Par mon Arme !” ou n’importe quel coup sans annonce afin l’ignorer purement et simplement en annonçant “Haha” au moment ou
+vous venez de le recevoir. Par exemple, contre une attaque héroïque, un coup normal, une flèche, annoncez “Haha !”.
+Toute autre annonce Par XXX “ ne peut être contrée de cette manière”
+Une parade héroïque ne peut être effectuée que si vous voyez le coup venir : une fois reçue dans le dos, se retourner ne permet pas de faire une parade héroïque !
+
+Effets des actions héroiques : 
+
+• Arcs & Arbalètes : Les coups au but avec flèches ou carreaux d’arbalète sont toujours considérés comme des attaques héroïques à moins qu’ils ne touchent un bouclier. Cela ne consomme pas de points d’héroïsme. Il est inutile d’annoncer “Par mon Arme !” Reportez vous plus bas pour connaître les effets de la flèche selon l’endroit touché. Attention, une arme de jet ne peux jamais être utilisée pour porter avec une attaque héroïque.
+• Armes de siège : Les coups au but avec des armes de siège provoquent un “Agonie épique !” même s’ils touchent un bouclier. Il est inutile d’annoncer “Par mon Arme !”.
+• Coup retenu : Vous avez poussé votre “Par mon Arme !”, mais vous n’avez finalement pas frappé, le point d’héroïsme est dépensé.
+• Coup raté : Votre adversaire a esquivé ou vous avez tapé dans le vide ? Votre coup est raté et le point d’héroïsme est dépensé.
+• Coup paré par un bouclier : Votre adversaire doit reculer sous la force de l’impact de 5 pas, comme sous le coup d’une annonce “Par XXX : Recule !” (Un coup porté à l’aide d’un projectile n’a aucun effet contre un bouclier).
+• Coup paré par une arme : Votre adversaire doit lâcher son arme comme sous le coup d’une annonce “Par XXX : Désarmé !”.
+• Coup au bras : Le bras est cassé et inutilisable jusqu’au soin idoine. Tout objet tenu par ce bras doit être lâché au sol comme sous le coup d’une annonce “Par XXX : Brisé !”. Tout objet tenu par ce bras doit être lâché au sol.
+Votre adversaire perd également un niveau de santé, mais ses points d’armure ne sont pas affectés.
+• Coup à la jambe : La jambe est cassée et inutilisable jusqu’au soin idoine. Votre adversaire doit poser le genou au sol et ne pourra plus se déplacer qu’avec l’aide d’une autre personne, comme sous le coup d’une annonce “ Par XXX: Brisé !”. Il perd également un niveau de santé, mais ses points d’armure ne sont pas affectés.
+• Coup au tronc : Un coup d’une redoutable efficacité. Votre adversaire passe à l’état “Agonisant” comme sous
+le coup d’une annonce “Par XXX : Agonie !”, mais ses points d’armure ne sont pas affectés.
