@@ -1,0 +1,244 @@
+Agilité
+
+Apprenti :
+Main gauche
+
+Vous pouvez utiliser une arme de moins de 50 cm dans votre seconde main.
+
+Vous obtenez une étiquette d’arme classique renouvelée à chaque GN.
+
+Note : Avoir deux armes en mains vous permet de combattre plusieurs adversaires en même temps (avec une seule arme aussi d'ailleurs) mais ne vous permet pas de prendre deux personnes en Menace en utilisant la compétence attaque sournoise
+
+Initié :
+Souplesse
+
+Vous gagnez un point d’héroïsme.
+
+Si vous êtes attaché, vous pouvez vous libérer à condition que personne ne vous regarde pendant 100 secondes.
+
+-----------------------------------------------------
+Arme d'Hast
+
+Apprenti :
+Longue hampe
+
+Vous pouvez manier une arme d'hast (composée d'une lame ou d'une pointe métallique fixée au bout d'un long manche sans garde, ou un bâton) de plus de 150 cm à condition de la manier à deux mains.
+
+Vous obtenez une étiquette d’arme classique renouvelée à chaque GN.
+
+-----------------------------------------------------
+Arme à une main
+
+Apprenti
+Prime
+
+Vous pouvez utiliser une arme de moins de 110 cm dans votre main directrice.
+
+Vous obtenez une étiquette d’arme classique renouvelée à chaque GN.
+
+-----------------------------------------------------
+Arme à deux mains
+
+Apprenti :
+Garde affrontée
+
+Vous pouvez utiliser une arme de plus de 110 cm et moins de 150 cm à condition de la manier à deux mains.
+
+Vous obtenez une étiquette d’arme classique renouvelée à chaque GN.
+
+-----------------------------------------------------
+Arme à Distance
+Apprenti
+Armes de jet
+
+Vous pouvez lancer des armes de jet de moins de 50 cm: dagues, hachettes, javelots, etc. (Une de ces armes de jet doit avoir une étiquette d’arme qui représente l’ensemble pour qu’elles soient utilisables)
+
+Vous pouvez utiliser les propulseurs primitifs (sarbacanes...). Ce propulseur doit être équipé d’une étiquette d’arme
+
+Vous ne pouvez porter que trois projectiles ou armes de jet sur vous.
+Aucune arme de jet ne peut occasionner d'attaques héroïques à distance.
+Vous obtenez une étiquette d’arme classique renouvelée à chaque GN.
+Note : Les points d'héroïsme ne peuvent pas être utilisés avec des armes de jet.
+
+Initié :
+
+Armes de trait
+Vous pouvez manier toutes les armes de trait : arc, arbalète, baliste, etc.
+Les armes de trait (mais pas leurs projectiles) doivent avoir une étiquette d’arme pour être utilisables
+Vous pouvez porter trois projectiles ou armes de jet sur vous de plus.
+
+-----------------------------------------------------
+Attaque Sournoise 
+
+Apprenti :
+Coup bas
+
+Lorsque vous frappez un individu dans le dos par Surprise, vous pouvez annoncer “Par mon Talent, Faiblesse”.
+Lorsque votre Menace est brisée vous pouvez Annoncer “Par mon Talent, Mort !” au lieu de '”Par mon Talent, Agonie !”.
+
+Note: Pour pouvoir utiliser une dague ou une autre arme, vous aurez besoin d'une étiquette d'arme qui n'est pas fournie par cette compétence (à trouver en jeu ou par le biais d'autres compétences).
+
+-----------------------------------------------------
+Résistance
+
+Apprenti :
+Volonté de fer
+
+Une fois par heure, vous pouvez résister à une  Annonce  commençant par « "Par mon Talent : Obéis ! Tu vas répondre la vérité à cette question », annoncez « HaHa ! »
+
+Une fois par heure vous pouvez résister à une  Annonce non magique “Fuis !”, annoncez “Haha !”.
+
+-----------------------------------------------------
+Sauvagerie 
+ 
+Apprenti :
+Echauffement
+
+Vous gagnez un point d’héroïsme.
+
+-----------------------------------------------------
+Survie
+
+Apprenti :
+Dur à cuire
+
+Vous ne souffrez pas des malus liés à l'état Blessé. 
+
+Initié :
+Vigoureux
+
+Vous ne souffrez pas des malus de l'état Faiblesse.
+Vous êtes immunisé aux maladies. Annoncez « Haha ! »
+
+Expert :
+Robuste
+
+Une fois par Période vous Résistez à une Annonce de Blessure, de Faiblesse ou d'Agonie. Annoncez « Haha ! »
+Tant que vous n'êtes pas mort, vous récupérez un niveau de Santé par heure.
+Une fois par GN, si vous êtes dans l'état Agonisant et que vous simulez la Mort, vous pouvez lancer l'Annonce : "Par mon Talent, Obéis : Pour toi je suis Mort !" (Vous ne pouvez donc pas être achevé).
+
+-----------------------------------------------------
+Torture
+
+Apprenti :
+Les ongles
+
+Vous pouvez lancer une Séance de Torture par heure.
+
+Lors d'une Séance de Torture, vous pouvez lancer une fois l'Annonce : "Par mon Talent, Obéis ! Tu vas répondre la vérité à cette question par oui ou par non puis sombrer dans l’Agonie." 
+
+-----------------------------------------------------
+Herboristerie 
+
+Apprenti :
+Cueilleur
+
+Vous disposez d'un guide décrivant les ingrédients. Les points de cueillette sont indiqués sur les cartes des cartographes. Vous seuls pouvez les ramasser dans la nature.
+
+Vous obtenez 5 ingrédients aléatoires.
+
+Initié :
+Les yeux
+
+Lors d'une Séance de Torture, vous pouvez également lancer une fois l'Annonce : "Par mon Talent: Obéis ! Tu vas répondre la vérité à cette question puis sombrer dans l’Agonie."
+Lors d'une Séance de Torture, vous pouvez lancer les Annonces "Par mon Talent : Brisé" et de "Par mon Talent : Aveuglé !" sur la victime à volonté.
+
+-----------------------------------------------------
+Ritualisme 
+Apprenti :
+Acolyte
+
+Vous pouvez faire partie des officiants d’un rituel.
+Vous êtes capable de déterminer si un objet est magique ou pas.
+
+-----------------------------------------------------
+Vol 
+Apprenti :
+Crochet
+
+Vous recevez la liste des Codes de niveau Apprenti pour crocheter les Serrures.
+
+
+Note : Vous devez laisser la serrure sur place sans changer le code mais vous pouvez la refermer si vous le souhaitez
+
+-----------------------------------------------------
+Guérison
+Apprenti :
+Premier Soin
+
+Vous pouvez apposer un des bandages rougeâtres fournis dans l'enveloppe de joueur à un patient non agonisant et ainsi lui redonner un niveau de santé au bout de 100s. Un patient ne peut avoir plus d’un bandage en même temps et devra le conserver pendant une heure.
+
+------------------------------------------------------
+Arts 
+Apprenti :
+Performance
+Une fois par heure et en dehors d'un Combat, et à condition de présenter une œuvre artistique crédible pendant au moins 100 secondes, vous pouvez lancer sur une personne l'Annonce : "Par mon Aura : Obéis ! Regarde-moi".
+
+Note : Tout objet d'art doit comporter une étiquette d'objet anodin pour être utilisée ainsi.
+
+------------------------------------------------------
+Prêtrise
+Apprenti :
+Novice
+
+Vous devez être Fervent ou Fanatique dans la religion de votre choix.
+Vous connaissez le niveau Fervent de toutes les Religions liées à votre Origine.
+Vous avez accès aux Prières de niveau Apprenti des Sphères de  votre Religion.
+Une fois par Période, en dehors d’un combat, vous pouvez lancer au nom de votre dieu avec une cible parlant un langage commun l’Annonce: “Par (Nom de la divinité) : Si tu es au moins pratiquant de (Nom de la divinité), Rends-moi ce service !”
+Vous pouvez faire des Cérémonies d'Initiation.
+
+------------------------------------------------------
+Noblesse
+Apprenti :
+Notable 
+
+Vous recevez deux Points de Renommée.
+Une fois par Période, en dehors d'un Combat et sur une seule cible, vous pouvez lancer l'Annonce : "Par mon Aura, Obéis ! Respecte-moi !". (Durée 100 secondes)
+
+
+Note : Attention, la noblesse ne permet pas de se libérer d’une Menace et ne fonctionne pas en combat.
+
+------------------------------------------------------
+Littérature
+Apprenti :
+Lettré
+
+Vous savez lire et écrire votre Langue Natale.
+
+Vous savez lire, écrire et parler deux Langues Courantes supplémentaire.
+Vous pouvez rédiger des documents officiels et recopier des Sorts ainsi que des Recettes (avec les contraintes qui sont liées aux compétences associées).
+
+------------------------------------------------------
+Charisme
+Apprenti :
+Service
+
+
+Une fois par Période et en dehors d’un combat, après une conversation en tête à tête d’au moins 100 secondes avec une Cible parlant un langage en commun, vous pouvez lancer une Annonce “Par mon Aura : Rends-moi ce service !”.
+
+Note : On ne peut pas cumuler plusieurs Charisme en même temps sur la même cible.
+
+------------------------------------------------------
+Alchimie
+Apprenti :
+Œuvre au noir
+
+Vous pouvez réaliser les recettes d'alchimie de niveau apprenti.
+Vous obtenez deux recettes de niveau apprenti.  
+Vous choisissez une potion Apprenti par GN, parmi celles que vous connaissez.
+
+------------------------------------------------------
+Commerce
+Apprenti :
+Stock de denrées
+
+Vous recevez 3 ressources aléatoires en début de jeu.
+
+------------------------------------------------------
+Discrétion
+Apprenti :
+Escamotage
+
+Lors d'une Fouille, vous pouvez empêcher un petit objet ou une petite bourse d'être trouvé.
+
+Note : l’objet ne doit pas être visible avant la fouille, ne doit pas faire plus de 10 cm de long et vous devez avoir entouré ce petit objet ou cette bourse fermée avec le bandeau blanc de hors jeu auparavant.
