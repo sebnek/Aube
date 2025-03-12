@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     let database;
 
-    // Charger database.json et afficher une erreur si ça ne marche pas
+    // Charger database.json et afficher son contenu dans la console
     try {
         let response = await fetch("database.json");
         if (!response.ok) throw new Error("Impossible de charger database.json");
         database = await response.json();
-        console.log("📜 Base de données chargée :", database);
+        console.log("✅ Base de données chargée avec succès :", database);
     } catch (error) {
         console.error("❌ ERREUR : ", error);
         addMessage("Erreur : Impossible de charger la base de données.", "bot-message");
@@ -29,17 +29,23 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
 
     async function getResponse(message) {
+        console.log("🔍 Recherche de : ", message);
+
+        // Vérification dans toutes les catégories de la base
         for (let category in database) {
             if (database[category][message]) {
-                console.log("🔗 Chargement de :", database[category][message]);
+                console.log("📜 Correspondance trouvée :", database[category][message]);
                 return await getFileContent(database[category][message]);
             }
         }
+        
+        console.log("❌ Aucune correspondance trouvée.");
         return "Je ne connais pas encore cette information.";
     }
 
     async function getFileContent(filePath) {
         try {
+            console.log("📂 Chargement du fichier :", filePath);
             let response = await fetch(filePath);
             if (!response.ok) throw new Error("Impossible de lire le fichier : " + filePath);
             return await response.text();
