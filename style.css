@@ -1,0 +1,59 @@
+body {
+    font-family: 'Georgia', serif;
+    background: url('parchemin.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #4A2C2A;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 204, 0.8);
+    border: 5px solid #8B4513;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8B0000;
+    font-size: 36px;
+}
+
+#chat-container {
+    background: rgba(255, 250, 240, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#chatbox {
+    min-height: 200px;
+    border: 2px solid #8B4513;
+    padding: 10px;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 300px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.bot-message {
+    font-weight: bold;
+    color: #8B0000;
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #8B0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
