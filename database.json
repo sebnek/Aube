@@ -10,16 +10,16 @@
         "Zembabwei": "fichiers/lieu - zembabwei.txt"
     },
     "personnages": {
-        "Gorrik": "fichiers/personnage - Gorrik.txt",
-        "Borrak": "fichiers/personnage_Borrak.txt",
-        "Ulrika": "fichiers/personnage - Ulrika.txt",
-        "Pouine": "fichiers/personnage - Pouine.txt",
-        "Hilda": "fichiers/personnage - Hilda.txt",
-        "Gang bang": "fichiers/personnage - Gang bang.txt",
-        "toucan": "fichiers/personnage - toucan.txt",
-        "Magugu": "fichiers/personnage - Magugu.txt",
-        "Sigvard": "fichiers/personnage - Sigvard.txt",
-        "Les 4": "fichiers/personnage - Les 4.txt"
+        "Gorrik": "fichiers/Personnage - Gorrik.txt",
+        "Borrak": "fichiers/Personnage_Borrak.txt",
+        "Ulrika": "fichiers/Personnage - Ulrika.txt",
+        "Pouine": "fichiers/Personnage - Pouine.txt",
+        "Hilda": "fichiers/Personnage - Hilda.txt",
+        "Gang bang": "fichiers/Personnage - Gang bang.txt",
+        "toucan": "fichiers/Personnage - toucan.txt",
+        "Magugu": "fichiers/Personnage - Magugu.txt",
+        "Sigvard": "fichiers/Personnage - Sigvard.txt",
+        "Les 4": "fichiers/Personnage - Les 4.txt"
     },
     "compétences": {
         "Compétences": "fichiers/Competences.txt",
