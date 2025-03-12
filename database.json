@@ -1,20 +1,28 @@
 {
     "dieux": {
-        "Damballah": "fichiers/dieu_damballah.txt",
-        "Derketo": "fichiers/dieu_derketo.txt",
-        "Dagon": "fichiers/dieu_dagon.txt",
-        "Ymir": "fichiers/dieu_ymir.txt"
+        "Damballah": "fichiers/dieux_damballah, derketo, dagon.txt",
+        "Derketo": "fichiers/dieux_damballah, derketo, dagon",
+        "Dagon": "fichiers/dieux_damballah, derketo, dagon",
+        "Ymir": "fichiers/dieu - ymir.txt"
     },
     "lieux": {
-        "Aquilonie": "fichiers/lieu_aquilonie.txt",
-        "Zembabwei": "fichiers/lieu_zembabwei.txt"
+        "Aquilonie": "fichiers/lieu - aquilonie.txt",
+        "Zembabwei": "fichiers/lieu - zembabwei.txt"
     },
     "personnages": {
-        "Nom1": "fichiers/personnage_nom1.txt",
-        "Nom2": "fichiers/personnage_nom2.txt"
+        "Gorrik": "fichiers/personnage - Gorrik.txt",
+        "Borrak": "fichiers/personnage - Borrak.txt",
+        "Ulrika": "fichiers/personnage - Ulrika.txt",
+        "Pouine": "fichiers/personnage - Pouine.txt",
+        "Hilda": "fichiers/personnage - Hilda.txt",
+        "Gang bang": "fichiers/personnage - Gang bang.txt",
+        "toucan": "fichiers/personnage - toucan.txt",
+        "Magugu": "fichiers/personnage - Magugu.txt",
+        "Sigvard": "fichiers/personnage - Sigvard.txt",
+        "Les 4": "fichiers/personnage - Les 4.txt"
     },
     "compétences": {
-        "Esquive": "fichiers/competence_esquive.txt",
-        "Maitrise des armes": "fichiers/competence_armes.txt"
+        "Compétences": "fichiers/Competences.txt",
+        "Attaques héroïques": "fichiers/competences - attaques héroïques.txt"
     }
 }
