@@ -15,6 +15,14 @@ body {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(3px 3px 5px black);
+}
+
 header {
     margin-bottom: 20px;
 }
