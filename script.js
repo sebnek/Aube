@@ -1,7 +1,7 @@
 let database = {};
 
 async function loadDatabase() {
-    try {
+    try { 
         let response = await fetch("database.json");
         if (!response.ok) throw new Error("Impossible de charger la base de données.");
         database = await response.json();
@@ -9,7 +9,7 @@ async function loadDatabase() {
     } catch (error) {
         console.error("Erreur : ", error);
     }
-}
+} 
 
 async function fetchFileContent(filePath) {
     try {
