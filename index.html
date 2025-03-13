@@ -4,50 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Aube Sanglante</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('font.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            text-align: center;
-            color: white;
-        }
-        #chatbox {
-            width: 80%;
-            max-width: 600px;
-            height: 400px;
-            margin: auto;
-            border: 2px solid white;
-            padding: 10px;
-            overflow-y: auto;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        input, button {
-            width: 80%;
-            padding: 10px;
-            margin-top: 10px;
-        }
-        .bot-message {
-            text-align: left;
-            color: yellow;
-        }
-        .user-message {
-            text-align: right;
-            color: cyan;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <!-- Ajout du logo -->
+            <img src="logo.png" alt="L'Aube Sanglante" class="logo">
+            <h1>L'Aube Sanglante</h1>
+            <p>Bienvenue dans l'encyclopédie interactive de votre univers pirate.</p>
+        </header>
 
-    <h1>L'Aube Sanglante</h1>
-    <div id="chatbox"></div>
-    <input type="text" id="user-input" placeholder="Pose une question sur l'encyclopédie...">
-    <button onclick="sendMessage()">Envoyer</button>
+        <section id="chat-container">
+            <div id="chatbox">
+                <p class="bot-message">📖 Posez une question sur un personnage, un lieu, une divinité, ou demandez un conseil.</p>
+            </div>
+            <input type="text" id="user-input" placeholder="Posez une question sur l'encyclopédie...">
+            <button onclick="sendMessage()">Envoyer</button>
+        </section>
+    </div>
 
     <script src="script.js"></script>
-    <script src="functions.js"></script>
-
 </body>
 </html>
