@@ -11,7 +11,7 @@
     },
     "personnages": {
         "Gorrik": "fichiers/Personnage - Gorrik.txt",
-        "Borrak": "fichiers/Personnage_Borrak.txt",
+        "Borrak": "Personnage_Borrak.txt",
         "Ulrika": "fichiers/Personnage - Ulrika.txt",
         "Pouine": "fichiers/Personnage - Pouine.txt",
         "Hilda": "fichiers/Personnage - Hilda.txt",
