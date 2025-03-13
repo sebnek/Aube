@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     const userInput = document.getElementById("user-input");
 
     let database = {};
-    const OPENAI_API_KEY = "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"; // 🔴 Mets ta clé OpenAI ici
+    const OPENAI_API_KEY = "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"; // 🔴 Mets ta clé OpenAI ici
     const USE_GPT_MODEL = "gpt-3.5-turbo"; // 🔵 Change en "gpt-4-turbo" si besoin
 
     // Charger database.json
