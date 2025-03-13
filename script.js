@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     let database = {};
 
-    // Charger database.json et vérifier s'il est bien accessible
+    // Charger database.json
     try {
         let response = await fetch("database.json");
         if (!response.ok) throw new Error("Impossible de charger database.json");
@@ -22,20 +22,31 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         addMessage("Vous : " + message, "user-message");
 
-        let response = getResponse(message);
+        let response = await getResponse(message);
         setTimeout(() => addMessage(response, "bot-message"), 500);
 
         userInput.value = "";
     }
 
-    function getResponse(message) {
+    async function getResponse(message) {
         console.log("🔍 Recherche de :", message);
+        let lowerMessage = message.toLowerCase();
 
+        // Vérifier si la demande est une aventure
+        if (lowerMessage.includes("aventure") || lowerMessage.includes("histoire") || lowerMessage.includes("quête")) {
+            return generateAdventure(message);
+        }
+
+        // Vérifier si la demande concerne un personnage, un lieu ou un dieu
         for (let category in database) {
             for (let key in database[category]) {
-                if (message.toLowerCase().includes(key.toLowerCase())) {
+                if (lowerMessage.includes(key.toLowerCase())) {
                     console.log("✅ Correspondance trouvée :", key);
-                    return `📖 Voici ce que je sais sur **${key}** : ${database[category][key]}`;
+                    
+                    let filePath = database[category][key];
+                    let fileContent = await getFileContent(filePath);
+                    
+                    return `📖 Voici ce que je sais sur **${key}** : ${fileContent}`;
                 }
             }
         }
@@ -44,13 +55,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         return "Je ne connais pas encore cette information.";
     }
 
-    function addMessage(text, className) {
-        let msg = document.createElement("p");
-        msg.className = className;
-        msg.innerHTML = text;
-        chatbox.appendChild(msg);
-        chatbox.scrollTop = chatbox.scrollHeight;
-    }
-
-    window.sendMessage = sendMessage;
-});
+    async function getFileContent(filePath) {
+        try {
+            console.log("📂
