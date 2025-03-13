@@ -1,19 +1,27 @@
-N'Borrak 
+Nom : N'Borrak
 Surnom : Borrak
 
-Classes : Sauvage 
-Age 37 ans.
+Classes : Sauvage
+Âge : 37 ans
 Origine : Zembabweï
 
-Armes : 2 épée et une énorme hache à deux main
+Armes :
+- 2 épées
+- Une énorme hache à deux mains
 
-Compétences : Sauvagerie Initié / Survie Initié / Agilité Initié /  Armes à 1 main Apprenti / Attaque sournoise Apprenti / Résistance / Arme à 2 mains Appenti
+Compétences :
+- Sauvagerie (Initié)
+- Survie (Initié)
+- Agilité (Initié)
+- Armes à 1 main (Apprenti)
+- Attaque sournoise (Apprenti)
+- Résistance
+- Arme à 2 mains (Apprenti)
 
-Petit frère de N'Gorrik
-On s'embrouille souvent pour divers sujets mais généralement on finit souvent à égalité .
+Famille :
+- Petit frère de N'Gorrik
+- Relation conflictuelle : on s'embrouille souvent, mais généralement on finit à égalité.
 
-Par terre sur le sol après un double coup de boule.
-
-Amoureux en secret d'Hilda , mais comme je suis sauvageons j'ai du mal a exprimer mes sentiments , je n'ai pas forcément les mots ( MOI taper ,  MOI aimer ... pareil )
-
-Mais j'ai une devise : protéger mon frère mais pas que, le médecin aussi !
+Relations :
+- Amoureux en secret d'Hilda, mais a du mal à exprimer ses sentiments ("MOI taper, MOI aimer... pareil").
+- Devise : "Protéger mon frère, mais pas que... le médecin aussi !"
