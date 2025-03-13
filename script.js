@@ -1,36 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const userInput = document.getElementById("user-input");
-    const chatbox = document.getElementById("chatbox");
-    const sendButton = document.querySelector("button");
+async function chercher() {
+    const requete = document.getElementById('requete').value;
+    const reponseDiv = document.getElementById('reponse');
 
-    sendButton.addEventListener("click", sendMessage);
-    userInput.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            sendMessage();
-        }
-    });
+    // Lire le fichier texte
+    const response = await fetch('data/informations.txt');
+    const text = await response.text();
 
-    async function sendMessage() {
-        const message = userInput.value.trim();
-        if (message === "") return;
+    // Rechercher la réponse (simple exemple)
+    const reponse = text.includes(requete) ? "Information trouvée !" : "Aucune information trouvée.";
 
-        addMessage("Vous : " + message, "user-message");
-
-        try {
-            const response = await getResponse(message);
-            addMessage(response, "bot-message");
-        } catch (error) {
-            addMessage("❌ Erreur : " + error.message, "bot-message");
-        }
-
-        userInput.value = "";
-    }
-
-    function addMessage(text, className) {
-        const messageElement = document.createElement("p");
-        messageElement.classList.add(className);
-        messageElement.innerHTML = text;
-        chatbox.appendChild(messageElement);
-        chatbox.scrollTop = chatbox.scrollHeight;
-    }
-});
+    reponseDiv.innerHTML = `<h2>Réponse :</h2><p>${reponse}</p>`;
+}
