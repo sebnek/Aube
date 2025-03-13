@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const userInput = document.getElementById("user-input");
     const chatbox = document.getElementById("chatbox");
+    const sendButton = document.querySelector("button");
 
-    document.querySelector("button").addEventListener("click", sendMessage);
+    sendButton.addEventListener("click", sendMessage);
     userInput.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
             sendMessage();
@@ -15,8 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         addMessage("Vous : " + message, "user-message");
 
-        const response = await getResponse(message);
-        setTimeout(() => addMessage(response, "bot-message"), 500);
+        try {
+            const response = await getResponse(message);
+            addMessage(response, "bot-message");
+        } catch (error) {
+            addMessage("❌ Erreur : " + error.message, "bot-message");
+        }
 
         userInput.value = "";
     }
