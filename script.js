@@ -1,7 +1,7 @@
 let database = {};
 
 async function loadDatabase() {
-    try { 
+    try {
         let response = await fetch("database.json");
         if (!response.ok) throw new Error("Impossible de charger la base de données.");
         database = await response.json();
@@ -9,7 +9,7 @@ async function loadDatabase() {
     } catch (error) {
         console.error("Erreur : ", error);
     }
-} 
+}
 
 async function fetchFileContent(filePath) {
     try {
@@ -38,7 +38,6 @@ async function getResponse(query) {
     let category = null;
     let target = null;
 
-    // Recherche de la catégorie (personnages, lieux, divinités, compétences...)
     for (let key in database) {
         for (let entry in database[key]) {
             if (words.includes(entry.toLowerCase())) {
@@ -73,5 +72,7 @@ function addMessage(text, className) {
     chatbox.appendChild(messageElement);
 }
 
-// Charger la base de données au démarrage
-loadDatabase();
+// Vérifie que le DOM est bien chargé avant d’exécuter le script
+document.addEventListener("DOMContentLoaded", function() {
+    loadDatabase();
+});
