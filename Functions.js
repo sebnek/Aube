@@ -1,30 +1,26 @@
-// Fonction qui réfléchit et génère des réponses intelligentes
-function generateIntelligentResponse(question, database) {
-    let lowerQuestion = question.toLowerCase();
+async function getResponse(userMessage) {
+    try {
+        const databaseResponse = await fetch("database.json");
+        const database = await databaseResponse.json();
 
-    // Vérifier si la question correspond à un élément du JSON
-    for (let category in database) {
-        for (let key in database[category]) {
-            if (lowerQuestion.includes(key.toLowerCase())) {
-                return `📖 Voici ce que je sais sur **${key}** : ${database[category][key]}`;
+        let lowerMessage = userMessage.toLowerCase();
+        let found = false;
+        let response = "📖 Je ne connais pas encore cette information.";
+
+        for (const [key, file] of Object.entries(database)) {
+            if (lowerMessage.includes(key.toLowerCase())) {
+                const fileResponse = await fetch(file);
+                if (fileResponse.ok) {
+                    const fileText = await fileResponse.text();
+                    response = "📖 Voici ce que je sais sur **" + key + "** :<br>" + fileText;
+                    found = true;
+                    break;
+                }
             }
         }
-    }
 
-    // Générer une réponse plus avancée
-    if (lowerQuestion.includes("meilleur combattant")) {
-        return "Le meilleur combattant dépend du contexte. Borrak est redoutable en duel, mais certains dieux comme Damballah possèdent des pouvoirs bien supérieurs.";
+        return response;
+    } catch (error) {
+        return "❌ Erreur : Impossible de charger la base de données.";
     }
-    
-    if (lowerQuestion.includes("quelle compétence choisir")) {
-        let skills = Object.keys(database["compétences"]);
-        let randomSkill = skills[Math.floor(Math.random() * skills.length)];
-        return `Je te conseille de développer la compétence **${randomSkill}** : ${database["compétences"][randomSkill]}`;
-    }
-
-    if (lowerQuestion.includes("invente une histoire")) {
-        return `Il était une fois un pirate sanguinaire nommé Borrak. Lors d'une bataille contre un équipage maudit, il dut affronter un spectre légendaire...`;
-    }
-
-    return "🤔 Je ne connais pas encore cette information, mais je continue d'apprendre !";
 }
