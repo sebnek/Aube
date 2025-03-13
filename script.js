@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     const userInput = document.getElementById("user-input");
 
     let database = {};
+    const OPENAI_API_KEY = "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"; // 🔴 Mets ta clé OpenAI ici
+    const USE_GPT_MODEL = "gpt-3.5-turbo"; // 🔵 Change en "gpt-4-turbo" si besoin
 
     // Charger database.json
     try {
@@ -32,9 +34,10 @@ document.addEventListener("DOMContentLoaded", async function() {
         console.log("🔍 Recherche de :", message);
         let lowerMessage = message.toLowerCase();
 
-        // Vérifier si la demande est une aventure
-        if (lowerMessage.includes("aventure") || lowerMessage.includes("histoire") || lowerMessage.includes("quête")) {
-            return generateAdventure(message);
+        // Vérifier si la demande est une aventure ou une réflexion avancée
+        if (lowerMessage.includes("aventure") || lowerMessage.includes("histoire") || lowerMessage.includes("quête") ||
+            lowerMessage.includes("stratégie") || lowerMessage.includes("meilleur combattant") || lowerMessage.includes("arme")) {
+            return await getOpenAIResponse(message);
         }
 
         // Vérifier si la demande concerne un personnage, un lieu ou un dieu
@@ -71,30 +74,39 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
     }
 
-    function generateAdventure(message) {
-        let character = null;
+    async function getOpenAIResponse(userMessage) {
+        console.log("🧠 Envoi de la requête à OpenAI...");
+        try {
+            let payload = {
+                model: USE_GPT_MODEL,
+                messages: [
+                    { role: "system", content: "Tu es un expert de l'univers de l'Aube Sanglante. Réponds uniquement avec les informations de la base de données et invente des histoires basées sur ses personnages." },
+                    { role: "user", content: userMessage }
+                ],
+                max_tokens: 300,
+                temperature: 0.7
+            };
 
-        // Vérifier si un personnage connu est mentionné
-        for (let key in database["personnages"]) {
-            if (message.toLowerCase().includes(key.toLowerCase())) {
-                character = key;
-                break;
-            }
+            let response = await fetch("https://api.openai.com/v1/chat/completions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${OPENAI_API_KEY}`
+                },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) throw new Error(`Erreur OpenAI : ${response.status}`);
+
+            let data = await response.json();
+            let reply = data.choices[0].message.content;
+
+            console.log("💬 Réponse OpenAI :", reply);
+            return reply;
+        } catch (error) {
+            console.error("❌ ERREUR OpenAI :", error);
+            return "Erreur dans la génération de la réponse. OpenAI n'est pas disponible.";
         }
-
-        if (!character) {
-            return "Je ne connais pas ce personnage, mais je peux inventer une aventure si tu me donnes un nom connu !";
-        }
-
-        let adventureTemplates = [
-            `Un jour, **${character}** découvrit une mystérieuse île peuplée de créatures anciennes. Seul son courage et son intelligence lui permirent de survivre...`,
-            `Alors qu'il naviguait en quête de gloire, **${character}** se retrouva face à un navire fantôme. S'engagea alors un duel contre un capitaine maudit...`,
-            `Dans une taverne obscure, **${character}** entendit parler d'un trésor caché sous les ruines d'une cité engloutie. Son instinct de guerrier le poussa à partir immédiatement...`,
-            `Une nuit, **${character}** fit un rêve étrange où une ancienne prophétie annonçait son destin. Le lendemain, il trouva une carte mystérieuse...`
-        ];
-
-        let randomIndex = Math.floor(Math.random() * adventureTemplates.length);
-        return adventureTemplates[randomIndex];
     }
 
     function addMessage(text, className) {
