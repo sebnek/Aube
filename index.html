@@ -3,27 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Aube Sanglante</title>
+    <title>Chatbot Encyclopédique</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <!-- Ajout du logo -->
-            <img src="logo.png" alt="L'Aube Sanglante" class="logo">
-            <h1>L'Aube Sanglante</h1>
-            <p>Bienvenue dans l'encyclopédie interactive de votre univers pirate.</p>
-        </header>
-
-        <section id="chat-container">
-            <div id="chatbox">
-                <p class="bot-message">📖 Posez une question sur un personnage, un lieu, une divinité, ou demandez un conseil.</p>
-            </div>
-            <input type="text" id="user-input" placeholder="Posez une question sur l'encyclopédie...">
-            <button onclick="sendMessage()">Envoyer</button>
-        </section>
+        <img src="static/logo.png" alt="Logo" class="logo" width="100">
+        <h1>Chatbot Encyclopédique</h1>
+        <input type="text" id="requete" placeholder="Posez votre question...">
+        <button onclick="chercher()">Chercher</button>
+        <div id="reponse"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
