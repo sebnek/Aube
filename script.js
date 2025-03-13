@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                     let filePath = database[category][key];
                     let fileContent = await getFileContent(filePath);
                     
-                    return `📖 Voici ce que je sais sur **${key}** : ${fileContent}`;
+                    return `📖 Voici ce que je sais sur **${key}** :<br><br> ${fileContent}`;
                 }
             }
         }
@@ -57,4 +57,53 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     async function getFileContent(filePath) {
         try {
-            console.log("📂
+            console.log("📂 Tentative de chargement :", filePath);
+            let response = await fetch(filePath);
+            
+            if (!response.ok) throw new Error(`Erreur HTTP ${response.status} sur ${filePath}`);
+
+            let text = await response.text();
+            console.log("📜 Fichier chargé avec succès :", text);
+            return text;
+        } catch (error) {
+            console.error("❌ ERREUR :", error);
+            return `Impossible de récupérer les données. Erreur : ${error.message}`;
+        }
+    }
+
+    function generateAdventure(message) {
+        let character = null;
+
+        // Vérifier si un personnage connu est mentionné
+        for (let key in database["personnages"]) {
+            if (message.toLowerCase().includes(key.toLowerCase())) {
+                character = key;
+                break;
+            }
+        }
+
+        if (!character) {
+            return "Je ne connais pas ce personnage, mais je peux inventer une aventure si tu me donnes un nom connu !";
+        }
+
+        let adventureTemplates = [
+            `Un jour, **${character}** découvrit une mystérieuse île peuplée de créatures anciennes. Seul son courage et son intelligence lui permirent de survivre...`,
+            `Alors qu'il naviguait en quête de gloire, **${character}** se retrouva face à un navire fantôme. S'engagea alors un duel contre un capitaine maudit...`,
+            `Dans une taverne obscure, **${character}** entendit parler d'un trésor caché sous les ruines d'une cité engloutie. Son instinct de guerrier le poussa à partir immédiatement...`,
+            `Une nuit, **${character}** fit un rêve étrange où une ancienne prophétie annonçait son destin. Le lendemain, il trouva une carte mystérieuse...`
+        ];
+
+        let randomIndex = Math.floor(Math.random() * adventureTemplates.length);
+        return adventureTemplates[randomIndex];
+    }
+
+    function addMessage(text, className) {
+        let msg = document.createElement("p");
+        msg.className = className;
+        msg.innerHTML = text;
+        chatbox.appendChild(msg);
+        chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    window.sendMessage = sendMessage;
+});
