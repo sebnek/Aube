@@ -1,28 +1,29 @@
 {
-    "dieux": {
-        "Damballah": "fichiers/dieux_damballah, derketo, dagon.txt",
-        "Derketo": "fichiers/dieux_damballah, derketo, dagon",
-        "Dagon": "fichiers/dieux_damballah, derketo, dagon",
-        "Ymir": "fichiers/dieu - ymir.txt"
+    "personnages": {
+        "Borrak": "Personnage_Borrak.txt",
+        "Hilda": "Personnage_Hilda.txt",
+        "Sigvard": "Personnage_Sigvard.txt",
+        "Ulrika": "Personnage_Ulrika.txt",
+        "Gorrik": "Personnage_Gorrik.txt",
+        "Gang Bang": "Personnage_Gang bang.txt",
+        "Pouine": "Personnage_pouine.txt",
+        "Toucan": "Personnage_toucan.txt",
+        "Magugu": "Personnages_Magugu.txt",
+        "Les 4": "Personnages_les 4.txt"
     },
     "lieux": {
-        "Aquilonie": "fichiers/lieu - aquilonie.txt",
-        "Zembabwei": "fichiers/lieu - zembabwei.txt"
+        "Aquilonie": "lieu - aquilonie.txt",
+        "Zembabwei": "lieux zembabwei.txt"
     },
-    "personnages": {
-        "Gorrik": "fichiers/Personnage - Gorrik.txt",
-        "Borrak": "Personnage_Borrak.txt",
-        "Ulrika": "fichiers/Personnage - Ulrika.txt",
-        "Pouine": "fichiers/Personnage - Pouine.txt",
-        "Hilda": "fichiers/Personnage - Hilda.txt",
-        "Gang bang": "fichiers/Personnage - Gang bang.txt",
-        "toucan": "fichiers/Personnage - toucan.txt",
-        "Magugu": "fichiers/Personnage - Magugu.txt",
-        "Sigvard": "fichiers/Personnage - Sigvard.txt",
-        "Les 4": "fichiers/Personnage - Les 4.txt"
+    "divinités": {
+        "Ymir": "Dieu - ymir.txt",
+        "Damballah": "Dieux - damballah, derketo, dagon.txt",
+        "Derketo": "Dieux - damballah, derketo, dagon.txt",
+        "Dagon": "Dieux - damballah, derketo, dagon.txt"
     },
-    "compétences": {
-        "Compétences": "fichiers/Competences.txt",
-        "Attaques héroïques": "fichiers/competences - attaques héroïques.txt"
-    }
+    "navires": {
+        "L'Aube Sanglante": "Navire - l'aube sanglante.txt"
+    },
+    "compétences": "Compétences.txt",
+    "compétences_avancées": "compétences - attaques héroïques.txt"
 }
