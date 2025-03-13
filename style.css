@@ -1,112 +1,116 @@
-/* Arrière-plan */
+/* Style global */
 body {
-    background: url('font.jpg') no-repeat center center fixed;
+    font-family: "Georgia", serif;
+    background-image: url("Font.jpg"); /* Vérifie que le nom correspond bien */
     background-size: cover;
-    font-family: 'Arial', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
 
 /* Conteneur principal */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 204, 0.95); /* Légère transparence */
+    background-color: rgba(255, 248, 220, 0.9); /* Beige avec transparence */
     border-radius: 10px;
-    border: 2px solid #8B0000; /* Bordure rouge sombre */
+    border: 3px solid #5e2c04;
     text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo */
 .logo {
-    width: 150px;
+    max-width: 150px;
     display: block;
-    margin: 0 auto 10px;
+    margin: 10px auto;
 }
 
 /* Titre */
 h1 {
     font-size: 28px;
-    color: #8B0000;
+    color: #8b0000;
+    margin-bottom: 10px;
 }
 
-/* Chatbox */
+/* Texte d'introduction */
+p {
+    font-size: 16px;
+    color: #4a2c1f;
+}
+
+/* Conteneur du chat */
 #chat-container {
-    background: rgba(255, 255, 204, 0.95);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #8B0000;
+    background-color: rgba(255, 248, 220, 0.95);
+    border-radius: 8px;
+    border: 2px solid #5e2c04;
+    padding: 15px;
+    text-align: left;
+    margin-top: 20px;
 }
 
-/* Messages */
-.bot-message, .user-message {
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-
-.bot-message {
-    background: #EEE;
-    color: #333;
-}
-
-.user-message {
-    background: #8B0000;
-    color: white;
-    text-align: right;
-}
-
-/* Zone de réponse (agrandie et lisible) */
+/* Zone de messages */
 #chatbox {
-    max-height: 400px;
+    max-height: 300px; /* Augmenté pour éviter que le texte soit coupé */
     overflow-y: auto;
-    font-size: 14px;
     padding: 10px;
-    background: white;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    min-height: 120px;
-    word-wrap: break-word;
+    border-bottom: 2px solid #5e2c04;
 }
 
-/* Input & Bouton */
-input[type="text"] {
-    width: 80%;
-    padding: 8px;
-    border: 1px solid #8B0000;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    background: #8B0000;
-    color: white;
-    border: none;
-    padding: 10px;
+/* Messages de l'utilisateur */
+.user-message {
+    color: #000;
+    font-weight: bold;
     margin-top: 10px;
-    cursor: pointer;
-    font-size: 16px;
+}
+
+/* Messages du bot */
+.bot-message {
+    color: #8b0000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Champ de saisie */
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 2px solid #5e2c04;
     border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Bouton envoyer */
+button {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
-    background: #600000;
+    background-color: #5e2c04;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
+/* Scroll personnalisé */
+#chatbox::-webkit-scrollbar {
+    width: 8px;
+}
 
-    h1 {
-        font-size: 24px;
-    }
+#chatbox::-webkit-scrollbar-thumb {
+    background: #8b0000;
+    border-radius: 4px;
+}
 
-    input[type="text"] {
-        width: 90%;
-    }
+#chatbox::-webkit-scrollbar-track {
+    background: #f4e4d7;
 }
